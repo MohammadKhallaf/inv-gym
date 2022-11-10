@@ -7,8 +7,8 @@ type Props = {};
 
 const AppNavbar = (props: Props) => {
   return (
-    <Navbar bg="light" variant="light">
-      <Container>
+    <Navbar bg="light" variant="light" className="text-uppercase">
+      <Container fluid="fluid">
         <Navbar.Brand href="#home">
           <img
             alt=""
@@ -16,14 +16,22 @@ const AppNavbar = (props: Props) => {
             className="d-inline-block align-top"
           />
         </Navbar.Brand>
-        <Nav className="me-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#features">Hot deals</Nav.Link>
+        <Nav className="me-auto  fs-6">
+          <Nav.Link href="#home" className="text-primary fw-bold">
+            Home
+          </Nav.Link>
+          <Nav.Link href="#features" className="text-primary">
+            Hot deals
+          </Nav.Link>
         </Nav>
-        <Nav>
-          <Nav.Link href="#deets">العربية</Nav.Link>
-          <Nav.Link href="#deets">sign in</Nav.Link>
-          <Nav.Link eventKey={2} href="#memes">
+        <Nav className="fw-boer">
+          <Nav.Link href="#deets" className="text-primary fw-bold">
+            العربية
+          </Nav.Link>
+          <Nav.Link href="#deets" className="text-secondary">
+            sign in
+          </Nav.Link>
+          <Nav.Link eventKey={2} href="#memes" className="btn bg-secondary">
             sign up
           </Nav.Link>
         </Nav>
