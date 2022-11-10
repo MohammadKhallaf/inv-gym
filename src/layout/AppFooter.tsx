@@ -4,8 +4,8 @@ type Props = {};
 
 const AppFooter = (props: Props) => {
   return (
-    <footer className="mt-auto">
-      ©{new Date().getFullYear()} ALGYM All Rights Reserved.
+    <footer className="bg-primary text-white py-3 fs-6 text-center">
+      ©{new Date().getFullYear()} AL-GYM All Rights Reserved.
     </footer>
   );
 };
