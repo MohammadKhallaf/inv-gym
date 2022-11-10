@@ -7,7 +7,11 @@ type Props = {};
 
 const AppNavbar = (props: Props) => {
   return (
-    <Navbar bg="light" variant="light" className="text-uppercase">
+    <Navbar
+      bg="white"
+      variant="light"
+      className="text-uppercase shadow-sm mb-5"
+    >
       <Container fluid="fluid">
         <Navbar.Brand href="#home">
           <img

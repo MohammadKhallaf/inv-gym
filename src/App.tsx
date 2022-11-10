@@ -1,10 +1,17 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
+import { useEffect, useState } from "react";
 import Layout from "./layout/index";
+
+import axios from "axios";
 import "./styles/app.scss";
+import ListPage from "./views/ListPage";
 
 function App() {
-  return <Layout>test</Layout>;
+ 
+  return (
+    <Layout>
+      <ListPage />
+    </Layout>
+  );
 }
 
 export default App;

@@ -8,9 +8,9 @@ type Props = {
 
 const index = (props: Props) => {
   return (
-    <div className="d-flex flex-column h-100">
+    <div className="d-flex flex-column" style={{ height: "100vh" }}>
       <AppNavbar />
-      <div>{props.children}</div>;
+      <main className="flex-grow-1">{props.children}</main>;
       <AppFooter />
     </div>
   );
